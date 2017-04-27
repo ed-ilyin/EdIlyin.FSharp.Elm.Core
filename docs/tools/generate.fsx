@@ -11,17 +11,17 @@
 // (This is the original behaviour of ProjectScaffold prior to multi project support)
 let referenceBinaries = []
 // Web site location for the generated documentation
-let website = "/##ProjectName##"
+let website = "/EdIlyin.Elm.Core"
 
-let githubLink = "##GitUrl##/##GitHome##/##GitName##"
+let githubLink = "https://github.com/ed-ilyin/fsharp-elm-core"
 
 // Specify more information about your project
 let info =
-  [ "project-name", "##ProjectName##"
-    "project-author", "##Author##"
-    "project-summary", "##Summary##"
+  [ "project-name", "EdIlyin.Elm.Core"
+    "project-author", "Ed Ilyin"
+    "project-summary", "Brings to the F# Elm language core package modules like Json.Encode, Json.Decode, Basics, Debug, Result, Tuple, etc"
     "project-github", githubLink
-    "project-nuget", "http://nuget.org/packages/##ProjectName##" ]
+    "project-nuget", "http://nuget.org/packages/EdIlyin.Elm.Core" ]
 
 // --------------------------------------------------------------------------------------
 // For typical project, no changes are needed below

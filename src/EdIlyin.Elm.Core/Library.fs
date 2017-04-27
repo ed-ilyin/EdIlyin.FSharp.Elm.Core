@@ -1,4 +1,4 @@
-﻿namespace FSharp.ProjectTemplate
+namespace EdIlyin.Elm.Core
 
 /// Documentation for my library
 ///

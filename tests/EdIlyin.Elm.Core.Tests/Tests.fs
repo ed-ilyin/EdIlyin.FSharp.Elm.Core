@@ -1,6 +1,6 @@
-﻿module FSharp.ProjectScaffold.Tests
+module EdIlyin.Elm.Core.Tests
 
-open FSharp.ProjectTemplate
+open EdIlyin.Elm.Core
 open NUnit.Framework
 
 [<Test>]
