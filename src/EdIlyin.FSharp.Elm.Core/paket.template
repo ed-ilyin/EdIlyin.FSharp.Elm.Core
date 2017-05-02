@@ -1,16 +1,16 @@
 type project
 title
-    EdIlyin.Elm.Core
+    EdIlyin.FSharp.Elm.Core
 owners
     Ed Ilyin
 authors 
     Ed Ilyin
 projectUrl
-    https://github.com/ed-ilyin/fsharp-elm-core
+    https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core
 iconUrl
-    https://raw.githubusercontent.com/ed-ilyin/fsharp-elm-core/master/docs/files/img/logo.png
+    https://raw.githubusercontent.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/master/docs/files/img/logo.png
 licenseUrl
-    https://github.com/ed-ilyin/fsharp-elm-core/blob/master/LICENSE.txt
+    https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/blob/master/LICENSE.txt
 requireLicenseAcceptance
     false
 copyright

@@ -10,8 +10,8 @@ Introducing your project
 Say more
 
 *)
-#r "EdIlyin.Elm.Core.dll"
-open EdIlyin.Elm.Core
+#r "EdIlyin.FSharp.Elm.Core.dll"
+open EdIlyin.FSharp.Elm.Core
 
 Library.hello 0
 (**

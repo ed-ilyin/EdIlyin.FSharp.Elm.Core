@@ -4,7 +4,7 @@
 #I "../../bin"
 
 (**
-EdIlyin.Elm.Core
+EdIlyin.FSharp.Elm.Core
 ======================
 
 Documentation
@@ -13,8 +13,8 @@ Documentation
   <div class="span1"></div>
   <div class="span6">
     <div class="well well-small" id="nuget">
-      The EdIlyin.Elm.Core library can be <a href="https://nuget.org/packages/EdIlyin.Elm.Core">installed from NuGet</a>:
-      <pre>PM> Install-Package EdIlyin.Elm.Core</pre>
+      The EdIlyin.FSharp.Elm.Core library can be <a href="https://nuget.org/packages/EdIlyin.FSharp.Elm.Core">installed from NuGet</a>:
+      <pre>PM> Install-Package EdIlyin.FSharp.Elm.Core</pre>
     </div>
   </div>
   <div class="span1"></div>
@@ -26,8 +26,8 @@ Example
 This example demonstrates using a function defined in this sample library.
 
 *)
-#r "EdIlyin.Elm.Core.dll"
-open EdIlyin.Elm.Core
+#r "EdIlyin.FSharp.Elm.Core.dll"
+open EdIlyin.FSharp.Elm.Core
 
 printfn "hello = %i" <| Library.hello 0
 
@@ -59,9 +59,9 @@ The library is available under Public Domain license, which allows modification 
 redistribution for both commercial and non-commercial purposes. For more information see the 
 [License file][license] in the GitHub repository. 
 
-  [content]: https://github.com/fsprojects/EdIlyin.Elm.Core/tree/master/docs/content
-  [gh]: https://github.com/fsprojects/EdIlyin.Elm.Core
-  [issues]: https://github.com/fsprojects/EdIlyin.Elm.Core/issues
-  [readme]: https://github.com/fsprojects/EdIlyin.Elm.Core/blob/master/README.md
-  [license]: https://github.com/fsprojects/EdIlyin.Elm.Core/blob/master/LICENSE.txt
+  [content]: https://github.com/fsprojects/EdIlyin.FSharp.Elm.Core/tree/master/docs/content
+  [gh]: https://github.com/fsprojects/EdIlyin.FSharp.Elm.Core
+  [issues]: https://github.com/fsprojects/EdIlyin.FSharp.Elm.Core/issues
+  [readme]: https://github.com/fsprojects/EdIlyin.FSharp.Elm.Core/blob/master/README.md
+  [license]: https://github.com/fsprojects/EdIlyin.FSharp.Elm.Core/blob/master/LICENSE.txt
 *)

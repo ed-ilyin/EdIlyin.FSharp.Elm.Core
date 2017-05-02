@@ -1,4 +1,4 @@
-namespace EdIlyin.Elm.Core.Option
+namespace EdIlyin.FSharp.Elm.Core.Option
 
 module Extra =
     let unwrap def func option =

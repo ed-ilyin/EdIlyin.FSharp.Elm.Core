@@ -1,6 +1,6 @@
-module EdIlyin.Elm.Core.Tests
+module EdIlyin.FSharp.Elm.Core.Tests
 
-open EdIlyin.Elm.Core
+open EdIlyin.FSharp.Elm.Core
 open NUnit.Framework
 
 [<Test>]

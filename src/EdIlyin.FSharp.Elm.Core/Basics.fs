@@ -1,4 +1,4 @@
-namespace EdIlyin.Elm.Core
+namespace EdIlyin.FSharp.Elm.Core
 
 /// Documentation for my library
 ///

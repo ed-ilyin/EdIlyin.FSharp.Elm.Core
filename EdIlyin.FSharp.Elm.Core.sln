@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{63297B
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{A6A6AF7D-D6E3-442D-9B1E-58CC91879BE1}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "EdIlyin.Elm.Core", "src\EdIlyin.Elm.Core\EdIlyin.Elm.Core.fsproj", "{75B547D5-0AD6-4DD1-9208-FE804C174037}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "EdIlyin.FSharp.Elm.Core", "src\EdIlyin.FSharp.Elm.Core\EdIlyin.FSharp.Elm.Core.fsproj", "{75B547D5-0AD6-4DD1-9208-FE804C174037}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "project", "project", "{BF60BC93-E09B-4E5F-9D85-95A519479D54}"
 	ProjectSection(SolutionItems) = preProject
@@ -32,7 +32,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "content", "content", "{8E6D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{ED8079DD-2B06-4030-9F0F-DC548F98E1C4}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "EdIlyin.Elm.Core.Tests", "tests\EdIlyin.Elm.Core.Tests\EdIlyin.Elm.Core.Tests.fsproj", "{353A4658-29F9-48B1-A0F6-225AD572922C}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "EdIlyin.FSharp.Elm.Core.Tests", "tests\EdIlyin.FSharp.Elm.Core.Tests\EdIlyin.FSharp.Elm.Core.Tests.fsproj", "{353A4658-29F9-48B1-A0F6-225AD572922C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

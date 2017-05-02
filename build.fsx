@@ -28,7 +28,7 @@ open SourceLink
 
 // The name of the project
 // (used by attributes in AssemblyInfo, name of a NuGet package and directory in 'src')
-let project = "EdIlyin.Elm.Core"
+let project = "EdIlyin.FSharp.Elm.Core"
 
 // Short summary of the project
 // (used as description in AssemblyInfo and as a short summary for NuGet package)
@@ -45,7 +45,7 @@ let authors = [ "Ed Ilyin" ]
 let tags = "brings to the fsharp elm language core package modules like json encode decode basics debug result tuple etc"
 
 // File system information
-let solutionFile  = "EdIlyin.Elm.Core.sln"
+let solutionFile  = "EdIlyin.FSharp.Elm.Core.sln"
 
 // Default target configuration
 let configuration = "Release"
@@ -59,7 +59,7 @@ let gitOwner = "ed-ilyin"
 let gitHome = sprintf "%s/%s" "https://github.com" gitOwner
 
 // The name of the project on GitHub
-let gitName = "fsharp-elm-core"
+let gitName = "EdIlyin.FSharp.Elm.Core"
 
 // The url for the raw files hosted
 let gitRaw = environVarOrDefault "gitRaw" "https://raw.githubusercontent.com/ed-ilyin"
@@ -122,7 +122,7 @@ Target "CopyBinaries" (fun _ ->
 // --------------------------------------------------------------------------------------
 // Clean build results
 
-let vsProjProps = 
+let vsProjProps =
 #if MONO
     [ ("DefineConstants","MONO"); ("Configuration", configuration) ]
 #else
