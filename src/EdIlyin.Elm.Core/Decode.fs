@@ -76,8 +76,8 @@ module Decode =
     let (>>=) decoder func = andThen func decoder
 
 
-    let andMap decoder fnDecoder =
-        fnDecoder >>= (fun f -> decoder >>= (f >> succeed))
+    let andMap decoder functionDecoder =
+        functionDecoder >>= (fun f -> decoder >>= (f >> succeed))
 
 
     let (<*>) fnDecoder decoder = andMap decoder fnDecoder
