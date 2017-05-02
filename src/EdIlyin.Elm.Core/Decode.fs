@@ -83,6 +83,10 @@ module Decode =
     let (<*>) fnDecoder decoder = andMap decoder fnDecoder
 
 
+    let map func decoder =
+        succeed func <*> decoder
+
+
     let map2 func decoder1 decoder2 =
         succeed func <*> decoder1 <*> decoder2
 
