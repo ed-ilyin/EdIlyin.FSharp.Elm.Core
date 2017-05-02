@@ -1,6 +1,8 @@
 source https://nuget.org/api/v2
 
 nuget FSharp.Core redirects: force
+nuget Hopac
+nuget MailKit
 
 group Build
   source https://nuget.org/api/v2
