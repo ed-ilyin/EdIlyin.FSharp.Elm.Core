@@ -1,4 +1,7 @@
-### 1.0.5 - May 02 2017
+### 1.0.6 - May 02 2017
+* gh-pages clean up
+
+#### 1.0.5 - May 02 2017
 * Adds Decode.map
 
 #### 1.0.4 - May 02 2017
