@@ -69,6 +69,8 @@
     <Compile Include="Basics.fs" />
     <Compile Include="Option.fs" />
     <Compile Include="Result.fs" />
+    <Compile Include="Decode.fs" />
+    <Compile Include="Debug.fs" />
     <None Include="paket.references" />
     <None Include="paket.template" />
     <Content Include="App.config" />
