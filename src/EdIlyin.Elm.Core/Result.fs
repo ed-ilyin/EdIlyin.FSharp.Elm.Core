@@ -156,6 +156,12 @@ module Result =
             list
 
 
+    let combineArray array =
+        Array.fold (map2 (fun s -> Array.singleton >> Array.append s))
+            (Ok Array.empty)
+            array
+
+
     let combineList list =
         Ok List.empty |> List.foldBack (map2 (fun e l -> e::l)) list
 

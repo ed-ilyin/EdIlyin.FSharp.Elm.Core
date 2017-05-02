@@ -38,6 +38,12 @@ module Decode =
     }
 
 
+    let failed x = {
+        decoder = (fun _ -> Err x)
+        label = sprintf "%A" x
+    }
+
+
     let primitive func =
         let label = "primitive"
 
@@ -91,3 +97,7 @@ module Decode =
             <*> decoder2
             <*> decoder3
             <*> decoder4
+
+
+    let fromResult result =
+        Result.unpack failed succeed result
