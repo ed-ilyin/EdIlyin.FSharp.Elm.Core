@@ -25,7 +25,7 @@ module Decode =
     let decodeValue decoder value =
         match run decoder value with
             | Err (label, error) ->
-                sprintf "Expecting %s. %s" label error |> Err
+                sprintf "Expecting %s %s" label error |> Err
 
             | Ok value' -> Ok value'
 
@@ -79,15 +79,29 @@ module Decode =
 
 
     let map func decoder =
-        succeed func <*> decoder
+        succeed func
+            <*> decoder
+            <?> sprintf "{ %s }" (getLabel decoder)
 
 
     let map2 func decoder1 decoder2 =
-        succeed func <*> decoder1 <*> decoder2
+        succeed func
+            <*> decoder1
+            <*> decoder2
+            <?> sprintf "{ %s, %s }"
+                (getLabel decoder1)
+                (getLabel decoder2)
 
 
     let map3 func decoder1 decoder2 decoder3 =
-        succeed func <*> decoder1 <*> decoder2 <*> decoder3
+        succeed func
+            <*> decoder1
+            <*> decoder2
+            <*> decoder3
+            <?> sprintf "{ %s, %s, %s }"
+                (getLabel decoder1)
+                (getLabel decoder2)
+                (getLabel decoder3)
 
 
     let map4 func decoder1 decoder2 decoder3 decoder4 =
@@ -96,6 +110,11 @@ module Decode =
             <*> decoder2
             <*> decoder3
             <*> decoder4
+            <?> sprintf "{ %s, %s, %s, %s }"
+                (getLabel decoder1)
+                (getLabel decoder2)
+                (getLabel decoder3)
+                (getLabel decoder4)
 
 
     let fromResult result =

@@ -1,4 +1,7 @@
-### 1.0.8 - May 03 2017
+### 1.0.9 - May 03 2017
+* Adds label for maps combinators
+
+#### 1.0.8 - May 03 2017
 * Trying to fix Decode error message
 
 #### 1.0.7 - May 02 2017
