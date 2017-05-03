@@ -8,7 +8,7 @@ type DecoderError = string
 
 
 type Decoder<'a,'b> = {
-    decoder : ('a -> Result<DecoderError, 'b>)
+    decoder : ('a -> Result<DecoderLabel * DecoderError, 'b>)
     label:  DecoderLabel
 }
 
@@ -23,10 +23,8 @@ module Decode =
 
 
     let decodeValue decoder value =
-        let label = getLabel decoder
-
         match run decoder value with
-            | Err error ->
+            | Err (label, error) ->
                 sprintf "Expecting %s. %s" label error |> Err
 
             | Ok value' -> Ok value'
@@ -62,15 +60,12 @@ module Decode =
 
 
     let andThen func decoder =
-        let label = getLabel decoder |> sprintf "%s and then"
-
         primitive
             (fun input ->
                 match run decoder input with
-                    | Err error -> Err error
+                    | Err (label, error) -> Err (label, error)
                     | Ok value -> run (func value) input
             )
-            <?> label
 
 
     let (>>=) decoder func = andThen func decoder

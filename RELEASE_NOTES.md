@@ -1,4 +1,7 @@
-### 1.0.7 - May 02 2017
+### 1.0.8 - May 03 2017
+* Trying to fix Decode error message
+
+#### 1.0.7 - May 02 2017
 * Renames EdIlyin.Elm.Core to EdIlyin.FSharp.Elm.Core
 
 #### 1.0.6 - May 02 2017
