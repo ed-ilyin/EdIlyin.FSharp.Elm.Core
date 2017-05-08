@@ -157,7 +157,7 @@ module Result =
 
 
     let combineArray array =
-        Array.fold (map2 (fun s -> Array.singleton >> Array.append s))
+        Array.fold (map2 (fun s e -> [| e |] |> Array.append s))
             (Ok Array.empty)
             array
 

@@ -1,4 +1,7 @@
-### 1.0.9 - May 03 2017
+### 1.0.10 - May 08 2017
+* move to FSharp.Core 4.3.1.0
+
+#### 1.0.9 - May 03 2017
 * Adds label for maps combinators
 
 #### 1.0.8 - May 03 2017
