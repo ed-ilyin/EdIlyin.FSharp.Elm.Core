@@ -1,7 +1,7 @@
 source https://nuget.org/api/v2
 
 nuget Chiron
-nuget FSharp.Core redirects: force
+nuget FSharp.Core ~> 3 redirects: force
 
 group Build
   source https://nuget.org/api/v2
