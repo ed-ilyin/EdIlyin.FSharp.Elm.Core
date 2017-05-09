@@ -1,4 +1,7 @@
-### 1.0.11 - May 08 2017
+### 1.0.12 - May 09 2017
+* Adds Json.Encode
+
+#### 1.0.11 - May 08 2017
 * switch back to latest FSharp.Core
 
 #### 1.0.10 - May 08 2017
