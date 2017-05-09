@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-    <title>Basics - EdIlyin.FSharp.Elm.Core</title>
+    <title>Encode - EdIlyin.FSharp.Elm.Core</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="description" content=""/>
     <meta name="author" content="Ed Ilyin"/>
@@ -35,23 +35,11 @@
 
 
 
-<h1>Basics</h1>
+<h1>Encode</h1>
 <p>
-  <span>Namespace: EdIlyin.FSharp.Elm.Core</span><br />
+  <span>Namespace: EdIlyin.FSharp.Elm.Json</span><br />
 </p>
 <div class="xmldoc">
-<p>Documentation for my library</p>
-
-        <h2>Example</h2>
-<table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l">1: </span>
-<span class="l">2: </span>
-</pre></td>
-<td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span class="k">let</span> <span class="i">h</span> <span class="o">=</span> <span class="i">Library</span><span class="o">.</span><span class="i">hello</span> <span class="n">1</span>
-<span class="i">printfn</span> <span class="s">&quot;%d&quot;</span> <span class="i">h</span>
-</code></pre></td>
-</tr>
-</table>
-
 </div>
 
 <!-- Render nested types and modules, if there are any -->
@@ -65,34 +53,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '1', 1)" onmouseover="showTip(event, '1', 1)">
-            ( =&gt; ) x y
+          <code onmouseout="hideTip(event, '58', 58)" onmouseover="showTip(event, '58', 58)">
+            bool b
           </code>
-          <div class="tip" id="1">
-            <strong>Signature:</strong> x:&#39;?7829 -&gt; y:&#39;?7830 -&gt; &#39;?7829 * &#39;?7830<br />
-                          <strong>Type parameters:</strong> '?7829, '?7830          </div>
+          <div class="tip" id="58">
+            <strong>Signature:</strong> b:bool -&gt; Json<br />
+                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/tree/master/src/EdIlyin.FSharp.Elm.Core/Basics.fs#L16-16" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-              <p>CompiledName: <code>op_EqualsGreater</code></p>
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '2', 2)" onmouseover="showTip(event, '2', 2)">
-            curry f x y
-          </code>
-          <div class="tip" id="2">
-            <strong>Signature:</strong> f:(&#39;b * &#39;c -&gt; &#39;d) -&gt; x:&#39;b -&gt; y:&#39;c -&gt; &#39;d<br />
-                          <strong>Type parameters:</strong> 'b, 'c, 'd          </div>
-        </td>
-        <td class="xmldoc">
-            <a href="https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/tree/master/src/EdIlyin.FSharp.Elm.Core/Basics.fs#L19-19" class="github-link">
+            <a href="https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/tree/master/src/EdIlyin.FSharp.Elm.Core/Json.Encode.fs#L19-19" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -102,15 +71,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '3', 3)" onmouseover="showTip(event, '3', 3)">
-            first func x arg3
+          <code onmouseout="hideTip(event, '59', 59)" onmouseover="showTip(event, '59', 59)">
+            encode 
           </code>
-          <div class="tip" id="3">
-            <strong>Signature:</strong> func:(&#39;?7840 -&gt; &#39;?7841) -&gt; x:&#39;?7840 -&gt; &#39;?7842 -&gt; &#39;?7841<br />
-                          <strong>Type parameters:</strong> '?7840, '?7841, '?7842          </div>
+          <div class="tip" id="59">
+            <strong>Signature:</strong> Json -&gt; string<br />
+                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/tree/master/src/EdIlyin.FSharp.Elm.Core/Basics.fs#L25-25" class="github-link">
+            <a href="https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/tree/master/src/EdIlyin.FSharp.Elm.Core/Json.Encode.fs#L7-7" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -120,15 +89,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '4', 4)" onmouseover="showTip(event, '4', 4)">
-            flip func x y
+          <code onmouseout="hideTip(event, '60', 60)" onmouseover="showTip(event, '60', 60)">
+            float f
           </code>
-          <div class="tip" id="4">
-            <strong>Signature:</strong> func:(&#39;?7848 -&gt; &#39;?7849 -&gt; &#39;?7850) -&gt; x:&#39;?7849 -&gt; y:&#39;?7848 -&gt; &#39;?7850<br />
-                          <strong>Type parameters:</strong> '?7848, '?7849, '?7850          </div>
+          <div class="tip" id="60">
+            <strong>Signature:</strong> f:float -&gt; Json<br />
+                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/tree/master/src/EdIlyin.FSharp.Elm.Core/Basics.fs#L31-31" class="github-link">
+            <a href="https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/tree/master/src/EdIlyin.FSharp.Elm.Core/Json.Encode.fs#L16-16" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -138,15 +107,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '5', 5)" onmouseover="showTip(event, '5', 5)">
-            second func arg2 y
+          <code onmouseout="hideTip(event, '61', 61)" onmouseover="showTip(event, '61', 61)">
+            int i
           </code>
-          <div class="tip" id="5">
-            <strong>Signature:</strong> func:(&#39;?7844 -&gt; &#39;?7845) -&gt; &#39;?7846 -&gt; y:&#39;?7844 -&gt; &#39;?7845<br />
-                          <strong>Type parameters:</strong> '?7844, '?7845, '?7846          </div>
+          <div class="tip" id="61">
+            <strong>Signature:</strong> i:int -&gt; Json<br />
+                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/tree/master/src/EdIlyin.FSharp.Elm.Core/Basics.fs#L28-28" class="github-link">
+            <a href="https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/tree/master/src/EdIlyin.FSharp.Elm.Core/Json.Encode.fs#L13-13" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -156,15 +125,69 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '6', 6)" onmouseover="showTip(event, '6', 6)">
-            uncurry f (x, y)
+          <code onmouseout="hideTip(event, '62', 62)" onmouseover="showTip(event, '62', 62)">
+            list l
           </code>
-          <div class="tip" id="6">
-            <strong>Signature:</strong> f:(&#39;?7836 -&gt; &#39;?7837 -&gt; &#39;?7838) -&gt; (x:&#39;?7836 * y:&#39;?7837) -&gt; &#39;?7838<br />
-                          <strong>Type parameters:</strong> '?7836, '?7837, '?7838          </div>
+          <div class="tip" id="62">
+            <strong>Signature:</strong> l:Json list -&gt; Json<br />
+                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/tree/master/src/EdIlyin.FSharp.Elm.Core/Basics.fs#L22-22" class="github-link">
+            <a href="https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/tree/master/src/EdIlyin.FSharp.Elm.Core/Json.Encode.fs#L25-25" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '63', 63)" onmouseover="showTip(event, '63', 63)">
+            null&#39; 
+          </code>
+          <div class="tip" id="63">
+            <strong>Signature:</strong> Json<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/tree/master/src/EdIlyin.FSharp.Elm.Core/Json.Encode.fs#L22-22" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '64', 64)" onmouseover="showTip(event, '64', 64)">
+            object&#39; kvl
+          </code>
+          <div class="tip" id="64">
+            <strong>Signature:</strong> kvl:(string * Json) list -&gt; Json<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/tree/master/src/EdIlyin.FSharp.Elm.Core/Json.Encode.fs#L28-28" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '65', 65)" onmouseover="showTip(event, '65', 65)">
+            string _arg1
+          </code>
+          <div class="tip" id="65">
+            <strong>Signature:</strong> _arg1:string -&gt; Json<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/tree/master/src/EdIlyin.FSharp.Elm.Core/Json.Encode.fs#L10-10" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
