@@ -145,3 +145,15 @@ module Decode =
 
         // return the parser
         {decoder=innerFn;label=label}
+
+
+    /// Run the parser on a InputState
+    let runOnInput parser input =
+        // call inner function with input
+        parser.decoder input
+
+
+    let parseAny parser input =
+         runOnInput parser input
+            |> Result.mapError (uncurry (sprintf "Expecting %A. %A."))
+            |> Result.map fst

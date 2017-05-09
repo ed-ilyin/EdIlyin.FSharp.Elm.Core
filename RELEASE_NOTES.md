@@ -1,4 +1,7 @@
-### 1.0.14 - May 09 2017
+### 1.0.15 - May 09 2017
+* Adds Decode.parseAny
+
+#### 1.0.14 - May 09 2017
 * Adds Decode.satisfy
 
 #### 1.0.13 - May 09 2017
