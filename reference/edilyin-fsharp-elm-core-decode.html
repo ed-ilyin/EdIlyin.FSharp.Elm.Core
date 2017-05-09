@@ -54,9 +54,28 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '9', 9)" onmouseover="showTip(event, '9', 9)">
-            ( &lt;*&gt; ) fnDecoder decoder
+            ( .&gt;&gt;. ) 
           </code>
           <div class="tip" id="9">
+            <strong>Signature:</strong> Decoder&lt;&#39;?7652,&#39;?7653&gt; -&gt; Decoder&lt;&#39;?7652,&#39;?7654&gt; -&gt; Decoder&lt;&#39;?7652,(&#39;?7653 * &#39;?7654)&gt;<br />
+                          <strong>Type parameters:</strong> '?7652, '?7653, '?7654          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/tree/master/src/EdIlyin.FSharp.Elm.Core/Decode.fs#L170-170" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+              <p>CompiledName: <code>op_DotGreaterGreaterDot</code></p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '10', 10)" onmouseover="showTip(event, '10', 10)">
+            ( &lt;*&gt; ) fnDecoder decoder
+          </code>
+          <div class="tip" id="10">
             <strong>Signature:</strong> fnDecoder:Decoder&lt;&#39;?7606,(&#39;?7607 -&gt; &#39;?7608)&gt; -&gt; decoder:Decoder&lt;&#39;?7606,&#39;?7607&gt; -&gt; Decoder&lt;&#39;?7606,&#39;?7608&gt;<br />
                           <strong>Type parameters:</strong> '?7606, '?7607, '?7608          </div>
         </td>
@@ -72,10 +91,10 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '10', 10)" onmouseover="showTip(event, '10', 10)">
+          <code onmouseout="hideTip(event, '11', 11)" onmouseover="showTip(event, '11', 11)">
             ( &lt;?&gt; ) decoder label
           </code>
-          <div class="tip" id="10">
+          <div class="tip" id="11">
             <strong>Signature:</strong> decoder:Decoder&lt;&#39;?7591,&#39;?7592&gt; -&gt; label:DecoderLabel -&gt; Decoder&lt;&#39;?7591,&#39;?7592&gt;<br />
                           <strong>Type parameters:</strong> '?7591, '?7592          </div>
         </td>
@@ -91,10 +110,29 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '11', 11)" onmouseover="showTip(event, '11', 11)">
+          <code onmouseout="hideTip(event, '12', 12)" onmouseover="showTip(event, '12', 12)">
+            ( &gt;&gt;. ) p1 p2
+          </code>
+          <div class="tip" id="12">
+            <strong>Signature:</strong> p1:Decoder&lt;&#39;?7656,&#39;?7657&gt; -&gt; p2:Decoder&lt;&#39;?7656,&#39;?7658&gt; -&gt; Decoder&lt;&#39;?7656,&#39;?7658&gt;<br />
+                          <strong>Type parameters:</strong> '?7656, '?7657, '?7658          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/tree/master/src/EdIlyin.FSharp.Elm.Core/Decode.fs#L173-173" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+              <p>CompiledName: <code>op_GreaterGreaterDot</code></p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '13', 13)" onmouseover="showTip(event, '13', 13)">
             ( &gt;&gt;= ) decoder func
           </code>
-          <div class="tip" id="11">
+          <div class="tip" id="13">
             <strong>Signature:</strong> decoder:Decoder&lt;&#39;?7598,&#39;?7599&gt; -&gt; func:(&#39;?7599 -&gt; Decoder&lt;&#39;?7598,&#39;?7600&gt;) -&gt; Decoder&lt;&#39;?7598,&#39;?7600&gt;<br />
                           <strong>Type parameters:</strong> '?7598, '?7599, '?7600          </div>
         </td>
@@ -110,10 +148,10 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '12', 12)" onmouseover="showTip(event, '12', 12)">
+          <code onmouseout="hideTip(event, '14', 14)" onmouseover="showTip(event, '14', 14)">
             andMap decoder functionDecoder
           </code>
-          <div class="tip" id="12">
+          <div class="tip" id="14">
             <strong>Signature:</strong> decoder:Decoder&lt;&#39;?7602,&#39;?7603&gt; -&gt; functionDecoder:Decoder&lt;&#39;?7602,(&#39;?7603 -&gt; &#39;?7604)&gt; -&gt; Decoder&lt;&#39;?7602,&#39;?7604&gt;<br />
                           <strong>Type parameters:</strong> '?7602, '?7603, '?7604          </div>
         </td>
@@ -128,10 +166,10 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '13', 13)" onmouseover="showTip(event, '13', 13)">
+          <code onmouseout="hideTip(event, '15', 15)" onmouseover="showTip(event, '15', 15)">
             andThen func decoder
           </code>
-          <div class="tip" id="13">
+          <div class="tip" id="15">
             <strong>Signature:</strong> func:(&#39;?7594 -&gt; Decoder&lt;&#39;?7595,&#39;?7596&gt;) -&gt; decoder:Decoder&lt;&#39;?7595,&#39;?7594&gt; -&gt; Decoder&lt;&#39;?7595,&#39;?7596&gt;<br />
                           <strong>Type parameters:</strong> '?7594, '?7595, '?7596          </div>
         </td>
@@ -146,10 +184,10 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '14', 14)" onmouseover="showTip(event, '14', 14)">
+          <code onmouseout="hideTip(event, '16', 16)" onmouseover="showTip(event, '16', 16)">
             decodeValue decoder value
           </code>
-          <div class="tip" id="14">
+          <div class="tip" id="16">
             <strong>Signature:</strong> decoder:Decoder&lt;&#39;?7576,&#39;?7577&gt; -&gt; value:&#39;?7576 -&gt; Result&lt;string,&#39;?7577&gt;<br />
                           <strong>Type parameters:</strong> '?7576, '?7577          </div>
         </td>
@@ -164,10 +202,10 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '15', 15)" onmouseover="showTip(event, '15', 15)">
+          <code onmouseout="hideTip(event, '17', 17)" onmouseover="showTip(event, '17', 17)">
             failed (arg1, arg2)
           </code>
-          <div class="tip" id="15">
+          <div class="tip" id="17">
             <strong>Signature:</strong> (DecoderLabel * DecoderError) -&gt; Decoder&lt;&#39;?7582,&#39;?7583&gt;<br />
                           <strong>Type parameters:</strong> '?7582, '?7583          </div>
         </td>
@@ -182,10 +220,10 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '16', 16)" onmouseover="showTip(event, '16', 16)">
+          <code onmouseout="hideTip(event, '18', 18)" onmouseover="showTip(event, '18', 18)">
             fromResult result
           </code>
-          <div class="tip" id="16">
+          <div class="tip" id="18">
             <strong>Signature:</strong> result:Result&lt;(DecoderLabel * DecoderError),&#39;?7632&gt; -&gt; Decoder&lt;&#39;?7633,&#39;?7632&gt;<br />
                           <strong>Type parameters:</strong> '?7632, '?7633          </div>
         </td>
@@ -200,10 +238,10 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '17', 17)" onmouseover="showTip(event, '17', 17)">
+          <code onmouseout="hideTip(event, '19', 19)" onmouseover="showTip(event, '19', 19)">
             getLabel decoder
           </code>
-          <div class="tip" id="17">
+          <div class="tip" id="19">
             <strong>Signature:</strong> decoder:Decoder&lt;&#39;?7573,&#39;?7574&gt; -&gt; DecoderLabel<br />
                           <strong>Type parameters:</strong> '?7573, '?7574          </div>
         </td>
@@ -218,10 +256,10 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '18', 18)" onmouseover="showTip(event, '18', 18)">
+          <code onmouseout="hideTip(event, '20', 20)" onmouseover="showTip(event, '20', 20)">
             map func decoder
           </code>
-          <div class="tip" id="18">
+          <div class="tip" id="20">
             <strong>Signature:</strong> func:(&#39;?7610 -&gt; &#39;?7611) -&gt; decoder:Decoder&lt;&#39;?7612,&#39;?7610&gt; -&gt; Decoder&lt;&#39;?7612,&#39;?7611&gt;<br />
                           <strong>Type parameters:</strong> '?7610, '?7611, '?7612          </div>
         </td>
@@ -236,10 +274,10 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '19', 19)" onmouseover="showTip(event, '19', 19)">
+          <code onmouseout="hideTip(event, '21', 21)" onmouseover="showTip(event, '21', 21)">
             map2 func decoder1 decoder2
           </code>
-          <div class="tip" id="19">
+          <div class="tip" id="21">
             <strong>Signature:</strong> func:(&#39;?7614 -&gt; &#39;?7615 -&gt; &#39;?7616) -&gt; decoder1:Decoder&lt;&#39;?7617,&#39;?7614&gt; -&gt; decoder2:Decoder&lt;&#39;?7617,&#39;?7615&gt; -&gt; Decoder&lt;&#39;?7617,&#39;?7616&gt;<br />
                           <strong>Type parameters:</strong> '?7614, '?7615, '?7616, '?7617          </div>
         </td>
@@ -254,10 +292,10 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '20', 20)" onmouseover="showTip(event, '20', 20)">
+          <code onmouseout="hideTip(event, '22', 22)" onmouseover="showTip(event, '22', 22)">
             map3 func decoder1 decoder2 decoder3
           </code>
-          <div class="tip" id="20">
+          <div class="tip" id="22">
             <strong>Signature:</strong> func:(&#39;?7619 -&gt; &#39;?7620 -&gt; &#39;?7621 -&gt; &#39;?7622) -&gt; decoder1:Decoder&lt;&#39;?7623,&#39;?7619&gt; -&gt; decoder2:Decoder&lt;&#39;?7623,&#39;?7620&gt; -&gt; decoder3:Decoder&lt;&#39;?7623,&#39;?7621&gt; -&gt; Decoder&lt;&#39;?7623,&#39;?7622&gt;<br />
                           <strong>Type parameters:</strong> '?7619, '?7620, '?7621, '?7622, '?7623          </div>
         </td>
@@ -272,10 +310,10 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '21', 21)" onmouseover="showTip(event, '21', 21)">
+          <code onmouseout="hideTip(event, '23', 23)" onmouseover="showTip(event, '23', 23)">
             map4 (...)
           </code>
-          <div class="tip" id="21">
+          <div class="tip" id="23">
             <strong>Signature:</strong> func:(&#39;?7625 -&gt; &#39;?7626 -&gt; &#39;?7627 -&gt; &#39;?7628 -&gt; &#39;?7629) -&gt; decoder1:Decoder&lt;&#39;?7630,&#39;?7625&gt; -&gt; decoder2:Decoder&lt;&#39;?7630,&#39;?7626&gt; -&gt; decoder3:Decoder&lt;&#39;?7630,&#39;?7627&gt; -&gt; decoder4:Decoder&lt;&#39;?7630,&#39;?7628&gt; -&gt; Decoder&lt;&#39;?7630,&#39;?7629&gt;<br />
                           <strong>Type parameters:</strong> '?7625, '?7626, '?7627, '?7628, '?7629, '?7630          </div>
         </td>
@@ -290,10 +328,10 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '22', 22)" onmouseover="showTip(event, '22', 22)">
+          <code onmouseout="hideTip(event, '24', 24)" onmouseover="showTip(event, '24', 24)">
             parseAny parser input
           </code>
-          <div class="tip" id="22">
+          <div class="tip" id="24">
             <strong>Signature:</strong> parser:Decoder&lt;&#39;?7644,(&#39;?7645 * &#39;?7646)&gt; -&gt; input:&#39;?7644 -&gt; Result&lt;string,&#39;?7645&gt;<br />
                           <strong>Type parameters:</strong> '?7644, '?7645, '?7646          </div>
         </td>
@@ -308,10 +346,10 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '23', 23)" onmouseover="showTip(event, '23', 23)">
+          <code onmouseout="hideTip(event, '25', 25)" onmouseover="showTip(event, '25', 25)">
             primitive func
           </code>
-          <div class="tip" id="23">
+          <div class="tip" id="25">
             <strong>Signature:</strong> func:(&#39;?7585 -&gt; Result&lt;(DecoderLabel * DecoderError),&#39;?7586&gt;) -&gt; Decoder&lt;&#39;?7585,&#39;?7586&gt;<br />
                           <strong>Type parameters:</strong> '?7585, '?7586          </div>
         </td>
@@ -326,10 +364,10 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '24', 24)" onmouseover="showTip(event, '24', 24)">
+          <code onmouseout="hideTip(event, '26', 26)" onmouseover="showTip(event, '26', 26)">
             run decoder value
           </code>
-          <div class="tip" id="24">
+          <div class="tip" id="26">
             <strong>Signature:</strong> decoder:Decoder&lt;&#39;?7570,&#39;?7571&gt; -&gt; value:&#39;?7570 -&gt; Result&lt;(DecoderLabel * DecoderError),&#39;?7571&gt;<br />
                           <strong>Type parameters:</strong> '?7570, '?7571          </div>
         </td>
@@ -344,10 +382,10 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '25', 25)" onmouseover="showTip(event, '25', 25)">
+          <code onmouseout="hideTip(event, '27', 27)" onmouseover="showTip(event, '27', 27)">
             runOnInput parser input
           </code>
-          <div class="tip" id="25">
+          <div class="tip" id="27">
             <strong>Signature:</strong> parser:Decoder&lt;&#39;?7641,&#39;?7642&gt; -&gt; input:&#39;?7641 -&gt; Result&lt;(DecoderLabel * DecoderError),&#39;?7642&gt;<br />
                           <strong>Type parameters:</strong> '?7641, '?7642          </div>
         </td>
@@ -362,10 +400,10 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '26', 26)" onmouseover="showTip(event, '26', 26)">
+          <code onmouseout="hideTip(event, '28', 28)" onmouseover="showTip(event, '28', 28)">
             satisfy nextFn predicate label
           </code>
-          <div class="tip" id="26">
+          <div class="tip" id="28">
             <strong>Signature:</strong> nextFn:(&#39;?7635 -&gt; &#39;?7636 * &#39;?7637 option) -&gt; predicate:(&#39;?7637 -&gt; Result&lt;&#39;?7638,&#39;?7639&gt;) -&gt; label:DecoderLabel -&gt; Decoder&lt;&#39;?7635,(&#39;?7639 * &#39;?7636)&gt;<br />
                           <strong>Type parameters:</strong> '?7635, '?7636, '?7637, '?7638, '?7639          </div>
         </td>
@@ -380,10 +418,10 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '27', 27)" onmouseover="showTip(event, '27', 27)">
+          <code onmouseout="hideTip(event, '29', 29)" onmouseover="showTip(event, '29', 29)">
             setLabel label decoder
           </code>
-          <div class="tip" id="27">
+          <div class="tip" id="29">
             <strong>Signature:</strong> label:DecoderLabel -&gt; decoder:Decoder&lt;&#39;?7588,&#39;?7589&gt; -&gt; Decoder&lt;&#39;?7588,&#39;?7589&gt;<br />
                           <strong>Type parameters:</strong> '?7588, '?7589          </div>
         </td>
@@ -398,15 +436,33 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '28', 28)" onmouseover="showTip(event, '28', 28)">
+          <code onmouseout="hideTip(event, '30', 30)" onmouseover="showTip(event, '30', 30)">
             succeed x
           </code>
-          <div class="tip" id="28">
+          <div class="tip" id="30">
             <strong>Signature:</strong> x:&#39;?7579 -&gt; Decoder&lt;&#39;?7580,&#39;?7579&gt;<br />
                           <strong>Type parameters:</strong> '?7579, '?7580          </div>
         </td>
         <td class="xmldoc">
             <a href="https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/tree/master/src/EdIlyin.FSharp.Elm.Core/Decode.fs#L33-33" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '31', 31)" onmouseover="showTip(event, '31', 31)">
+            tuple p1 p2
+          </code>
+          <div class="tip" id="31">
+            <strong>Signature:</strong> p1:Decoder&lt;&#39;?7648,&#39;?7649&gt; -&gt; p2:Decoder&lt;&#39;?7648,&#39;?7650&gt; -&gt; Decoder&lt;&#39;?7648,(&#39;?7649 * &#39;?7650)&gt;<br />
+                          <strong>Type parameters:</strong> '?7648, '?7649, '?7650          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/tree/master/src/EdIlyin.FSharp.Elm.Core/Decode.fs#L162-162" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
