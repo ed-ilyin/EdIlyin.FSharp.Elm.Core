@@ -57,8 +57,8 @@
             ( &lt;*&gt; ) fnDecoder decoder
           </code>
           <div class="tip" id="9">
-            <strong>Signature:</strong> fnDecoder:Decoder&lt;&#39;?7609,(&#39;?7610 -&gt; &#39;?7611)&gt; -&gt; decoder:Decoder&lt;&#39;?7609,&#39;?7610&gt; -&gt; Decoder&lt;&#39;?7609,&#39;?7611&gt;<br />
-                          <strong>Type parameters:</strong> '?7609, '?7610, '?7611          </div>
+            <strong>Signature:</strong> fnDecoder:Decoder&lt;&#39;?7606,(&#39;?7607 -&gt; &#39;?7608)&gt; -&gt; decoder:Decoder&lt;&#39;?7606,&#39;?7607&gt; -&gt; Decoder&lt;&#39;?7606,&#39;?7608&gt;<br />
+                          <strong>Type parameters:</strong> '?7606, '?7607, '?7608          </div>
         </td>
         <td class="xmldoc">
             <a href="https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/tree/master/src/EdIlyin.FSharp.Elm.Core/Decode.fs#L78-78" class="github-link">
@@ -76,8 +76,8 @@
             ( &lt;?&gt; ) decoder label
           </code>
           <div class="tip" id="10">
-            <strong>Signature:</strong> decoder:Decoder&lt;&#39;?7594,&#39;?7595&gt; -&gt; label:DecoderLabel -&gt; Decoder&lt;&#39;?7594,&#39;?7595&gt;<br />
-                          <strong>Type parameters:</strong> '?7594, '?7595          </div>
+            <strong>Signature:</strong> decoder:Decoder&lt;&#39;?7591,&#39;?7592&gt; -&gt; label:DecoderLabel -&gt; Decoder&lt;&#39;?7591,&#39;?7592&gt;<br />
+                          <strong>Type parameters:</strong> '?7591, '?7592          </div>
         </td>
         <td class="xmldoc">
             <a href="https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/tree/master/src/EdIlyin.FSharp.Elm.Core/Decode.fs#L59-59" class="github-link">
@@ -95,8 +95,8 @@
             ( &gt;&gt;= ) decoder func
           </code>
           <div class="tip" id="11">
-            <strong>Signature:</strong> decoder:Decoder&lt;&#39;?7601,&#39;?7602&gt; -&gt; func:(&#39;?7602 -&gt; Decoder&lt;&#39;?7601,&#39;?7603&gt;) -&gt; Decoder&lt;&#39;?7601,&#39;?7603&gt;<br />
-                          <strong>Type parameters:</strong> '?7601, '?7602, '?7603          </div>
+            <strong>Signature:</strong> decoder:Decoder&lt;&#39;?7598,&#39;?7599&gt; -&gt; func:(&#39;?7599 -&gt; Decoder&lt;&#39;?7598,&#39;?7600&gt;) -&gt; Decoder&lt;&#39;?7598,&#39;?7600&gt;<br />
+                          <strong>Type parameters:</strong> '?7598, '?7599, '?7600          </div>
         </td>
         <td class="xmldoc">
             <a href="https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/tree/master/src/EdIlyin.FSharp.Elm.Core/Decode.fs#L71-71" class="github-link">
@@ -114,8 +114,8 @@
             andMap decoder functionDecoder
           </code>
           <div class="tip" id="12">
-            <strong>Signature:</strong> decoder:Decoder&lt;&#39;?7605,&#39;?7606&gt; -&gt; functionDecoder:Decoder&lt;&#39;?7605,(&#39;?7606 -&gt; &#39;?7607)&gt; -&gt; Decoder&lt;&#39;?7605,&#39;?7607&gt;<br />
-                          <strong>Type parameters:</strong> '?7605, '?7606, '?7607          </div>
+            <strong>Signature:</strong> decoder:Decoder&lt;&#39;?7602,&#39;?7603&gt; -&gt; functionDecoder:Decoder&lt;&#39;?7602,(&#39;?7603 -&gt; &#39;?7604)&gt; -&gt; Decoder&lt;&#39;?7602,&#39;?7604&gt;<br />
+                          <strong>Type parameters:</strong> '?7602, '?7603, '?7604          </div>
         </td>
         <td class="xmldoc">
             <a href="https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/tree/master/src/EdIlyin.FSharp.Elm.Core/Decode.fs#L74-74" class="github-link">
@@ -132,8 +132,8 @@
             andThen func decoder
           </code>
           <div class="tip" id="13">
-            <strong>Signature:</strong> func:(&#39;?7597 -&gt; Decoder&lt;&#39;?7598,&#39;?7599&gt;) -&gt; decoder:Decoder&lt;&#39;?7598,&#39;?7597&gt; -&gt; Decoder&lt;&#39;?7598,&#39;?7599&gt;<br />
-                          <strong>Type parameters:</strong> '?7597, '?7598, '?7599          </div>
+            <strong>Signature:</strong> func:(&#39;?7594 -&gt; Decoder&lt;&#39;?7595,&#39;?7596&gt;) -&gt; decoder:Decoder&lt;&#39;?7595,&#39;?7594&gt; -&gt; Decoder&lt;&#39;?7595,&#39;?7596&gt;<br />
+                          <strong>Type parameters:</strong> '?7594, '?7595, '?7596          </div>
         </td>
         <td class="xmldoc">
             <a href="https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/tree/master/src/EdIlyin.FSharp.Elm.Core/Decode.fs#L62-62" class="github-link">
@@ -150,8 +150,8 @@
             decodeValue decoder value
           </code>
           <div class="tip" id="14">
-            <strong>Signature:</strong> decoder:Decoder&lt;&#39;?7579,&#39;?7580&gt; -&gt; value:&#39;?7579 -&gt; Result&lt;string,&#39;?7580&gt;<br />
-                          <strong>Type parameters:</strong> '?7579, '?7580          </div>
+            <strong>Signature:</strong> decoder:Decoder&lt;&#39;?7576,&#39;?7577&gt; -&gt; value:&#39;?7576 -&gt; Result&lt;string,&#39;?7577&gt;<br />
+                          <strong>Type parameters:</strong> '?7576, '?7577          </div>
         </td>
         <td class="xmldoc">
             <a href="https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/tree/master/src/EdIlyin.FSharp.Elm.Core/Decode.fs#L25-25" class="github-link">
@@ -168,8 +168,8 @@
             failed (arg1, arg2)
           </code>
           <div class="tip" id="15">
-            <strong>Signature:</strong> (DecoderLabel * DecoderError) -&gt; Decoder&lt;&#39;?7585,&#39;?7586&gt;<br />
-                          <strong>Type parameters:</strong> '?7585, '?7586          </div>
+            <strong>Signature:</strong> (DecoderLabel * DecoderError) -&gt; Decoder&lt;&#39;?7582,&#39;?7583&gt;<br />
+                          <strong>Type parameters:</strong> '?7582, '?7583          </div>
         </td>
         <td class="xmldoc">
             <a href="https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/tree/master/src/EdIlyin.FSharp.Elm.Core/Decode.fs#L39-39" class="github-link">
@@ -186,8 +186,8 @@
             fromResult result
           </code>
           <div class="tip" id="16">
-            <strong>Signature:</strong> result:Result&lt;(DecoderLabel * DecoderError),&#39;?7635&gt; -&gt; Decoder&lt;&#39;?7636,&#39;?7635&gt;<br />
-                          <strong>Type parameters:</strong> '?7635, '?7636          </div>
+            <strong>Signature:</strong> result:Result&lt;(DecoderLabel * DecoderError),&#39;?7632&gt; -&gt; Decoder&lt;&#39;?7633,&#39;?7632&gt;<br />
+                          <strong>Type parameters:</strong> '?7632, '?7633          </div>
         </td>
         <td class="xmldoc">
             <a href="https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/tree/master/src/EdIlyin.FSharp.Elm.Core/Decode.fs#L120-120" class="github-link">
@@ -204,8 +204,8 @@
             getLabel decoder
           </code>
           <div class="tip" id="17">
-            <strong>Signature:</strong> decoder:Decoder&lt;&#39;?7576,&#39;?7577&gt; -&gt; DecoderLabel<br />
-                          <strong>Type parameters:</strong> '?7576, '?7577          </div>
+            <strong>Signature:</strong> decoder:Decoder&lt;&#39;?7573,&#39;?7574&gt; -&gt; DecoderLabel<br />
+                          <strong>Type parameters:</strong> '?7573, '?7574          </div>
         </td>
         <td class="xmldoc">
             <a href="https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/tree/master/src/EdIlyin.FSharp.Elm.Core/Decode.fs#L21-21" class="github-link">
@@ -222,8 +222,8 @@
             map func decoder
           </code>
           <div class="tip" id="18">
-            <strong>Signature:</strong> func:(&#39;?7613 -&gt; &#39;?7614) -&gt; decoder:Decoder&lt;&#39;?7615,&#39;?7613&gt; -&gt; Decoder&lt;&#39;?7615,&#39;?7614&gt;<br />
-                          <strong>Type parameters:</strong> '?7613, '?7614, '?7615          </div>
+            <strong>Signature:</strong> func:(&#39;?7610 -&gt; &#39;?7611) -&gt; decoder:Decoder&lt;&#39;?7612,&#39;?7610&gt; -&gt; Decoder&lt;&#39;?7612,&#39;?7611&gt;<br />
+                          <strong>Type parameters:</strong> '?7610, '?7611, '?7612          </div>
         </td>
         <td class="xmldoc">
             <a href="https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/tree/master/src/EdIlyin.FSharp.Elm.Core/Decode.fs#L81-81" class="github-link">
@@ -240,8 +240,8 @@
             map2 func decoder1 decoder2
           </code>
           <div class="tip" id="19">
-            <strong>Signature:</strong> func:(&#39;?7617 -&gt; &#39;?7618 -&gt; &#39;?7619) -&gt; decoder1:Decoder&lt;&#39;?7620,&#39;?7617&gt; -&gt; decoder2:Decoder&lt;&#39;?7620,&#39;?7618&gt; -&gt; Decoder&lt;&#39;?7620,&#39;?7619&gt;<br />
-                          <strong>Type parameters:</strong> '?7617, '?7618, '?7619, '?7620          </div>
+            <strong>Signature:</strong> func:(&#39;?7614 -&gt; &#39;?7615 -&gt; &#39;?7616) -&gt; decoder1:Decoder&lt;&#39;?7617,&#39;?7614&gt; -&gt; decoder2:Decoder&lt;&#39;?7617,&#39;?7615&gt; -&gt; Decoder&lt;&#39;?7617,&#39;?7616&gt;<br />
+                          <strong>Type parameters:</strong> '?7614, '?7615, '?7616, '?7617          </div>
         </td>
         <td class="xmldoc">
             <a href="https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/tree/master/src/EdIlyin.FSharp.Elm.Core/Decode.fs#L87-87" class="github-link">
@@ -258,8 +258,8 @@
             map3 func decoder1 decoder2 decoder3
           </code>
           <div class="tip" id="20">
-            <strong>Signature:</strong> func:(&#39;?7622 -&gt; &#39;?7623 -&gt; &#39;?7624 -&gt; &#39;?7625) -&gt; decoder1:Decoder&lt;&#39;?7626,&#39;?7622&gt; -&gt; decoder2:Decoder&lt;&#39;?7626,&#39;?7623&gt; -&gt; decoder3:Decoder&lt;&#39;?7626,&#39;?7624&gt; -&gt; Decoder&lt;&#39;?7626,&#39;?7625&gt;<br />
-                          <strong>Type parameters:</strong> '?7622, '?7623, '?7624, '?7625, '?7626          </div>
+            <strong>Signature:</strong> func:(&#39;?7619 -&gt; &#39;?7620 -&gt; &#39;?7621 -&gt; &#39;?7622) -&gt; decoder1:Decoder&lt;&#39;?7623,&#39;?7619&gt; -&gt; decoder2:Decoder&lt;&#39;?7623,&#39;?7620&gt; -&gt; decoder3:Decoder&lt;&#39;?7623,&#39;?7621&gt; -&gt; Decoder&lt;&#39;?7623,&#39;?7622&gt;<br />
+                          <strong>Type parameters:</strong> '?7619, '?7620, '?7621, '?7622, '?7623          </div>
         </td>
         <td class="xmldoc">
             <a href="https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/tree/master/src/EdIlyin.FSharp.Elm.Core/Decode.fs#L96-96" class="github-link">
@@ -276,8 +276,8 @@
             map4 (...)
           </code>
           <div class="tip" id="21">
-            <strong>Signature:</strong> func:(&#39;?7628 -&gt; &#39;?7629 -&gt; &#39;?7630 -&gt; &#39;?7631 -&gt; &#39;?7632) -&gt; decoder1:Decoder&lt;&#39;?7633,&#39;?7628&gt; -&gt; decoder2:Decoder&lt;&#39;?7633,&#39;?7629&gt; -&gt; decoder3:Decoder&lt;&#39;?7633,&#39;?7630&gt; -&gt; decoder4:Decoder&lt;&#39;?7633,&#39;?7631&gt; -&gt; Decoder&lt;&#39;?7633,&#39;?7632&gt;<br />
-                          <strong>Type parameters:</strong> '?7628, '?7629, '?7630, '?7631, '?7632, '?7633          </div>
+            <strong>Signature:</strong> func:(&#39;?7625 -&gt; &#39;?7626 -&gt; &#39;?7627 -&gt; &#39;?7628 -&gt; &#39;?7629) -&gt; decoder1:Decoder&lt;&#39;?7630,&#39;?7625&gt; -&gt; decoder2:Decoder&lt;&#39;?7630,&#39;?7626&gt; -&gt; decoder3:Decoder&lt;&#39;?7630,&#39;?7627&gt; -&gt; decoder4:Decoder&lt;&#39;?7630,&#39;?7628&gt; -&gt; Decoder&lt;&#39;?7630,&#39;?7629&gt;<br />
+                          <strong>Type parameters:</strong> '?7625, '?7626, '?7627, '?7628, '?7629, '?7630          </div>
         </td>
         <td class="xmldoc">
             <a href="https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/tree/master/src/EdIlyin.FSharp.Elm.Core/Decode.fs#L107-107" class="github-link">
@@ -294,8 +294,8 @@
             primitive func
           </code>
           <div class="tip" id="22">
-            <strong>Signature:</strong> func:(&#39;?7588 -&gt; Result&lt;(DecoderLabel * DecoderError),&#39;?7589&gt;) -&gt; Decoder&lt;&#39;?7588,&#39;?7589&gt;<br />
-                          <strong>Type parameters:</strong> '?7588, '?7589          </div>
+            <strong>Signature:</strong> func:(&#39;?7585 -&gt; Result&lt;(DecoderLabel * DecoderError),&#39;?7586&gt;) -&gt; Decoder&lt;&#39;?7585,&#39;?7586&gt;<br />
+                          <strong>Type parameters:</strong> '?7585, '?7586          </div>
         </td>
         <td class="xmldoc">
             <a href="https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/tree/master/src/EdIlyin.FSharp.Elm.Core/Decode.fs#L45-45" class="github-link">
@@ -312,8 +312,8 @@
             run decoder value
           </code>
           <div class="tip" id="23">
-            <strong>Signature:</strong> decoder:Decoder&lt;&#39;?7573,&#39;?7574&gt; -&gt; value:&#39;?7573 -&gt; Result&lt;(DecoderLabel * DecoderError),&#39;?7574&gt;<br />
-                          <strong>Type parameters:</strong> '?7573, '?7574          </div>
+            <strong>Signature:</strong> decoder:Decoder&lt;&#39;?7570,&#39;?7571&gt; -&gt; value:&#39;?7570 -&gt; Result&lt;(DecoderLabel * DecoderError),&#39;?7571&gt;<br />
+                          <strong>Type parameters:</strong> '?7570, '?7571          </div>
         </td>
         <td class="xmldoc">
             <a href="https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/tree/master/src/EdIlyin.FSharp.Elm.Core/Decode.fs#L17-17" class="github-link">
@@ -330,8 +330,8 @@
             setLabel label decoder
           </code>
           <div class="tip" id="24">
-            <strong>Signature:</strong> label:DecoderLabel -&gt; decoder:Decoder&lt;&#39;?7591,&#39;?7592&gt; -&gt; Decoder&lt;&#39;?7591,&#39;?7592&gt;<br />
-                          <strong>Type parameters:</strong> '?7591, '?7592          </div>
+            <strong>Signature:</strong> label:DecoderLabel -&gt; decoder:Decoder&lt;&#39;?7588,&#39;?7589&gt; -&gt; Decoder&lt;&#39;?7588,&#39;?7589&gt;<br />
+                          <strong>Type parameters:</strong> '?7588, '?7589          </div>
         </td>
         <td class="xmldoc">
             <a href="https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/tree/master/src/EdIlyin.FSharp.Elm.Core/Decode.fs#L56-56" class="github-link">
@@ -348,8 +348,8 @@
             succeed x
           </code>
           <div class="tip" id="25">
-            <strong>Signature:</strong> x:&#39;?7582 -&gt; Decoder&lt;&#39;?7583,&#39;?7582&gt;<br />
-                          <strong>Type parameters:</strong> '?7582, '?7583          </div>
+            <strong>Signature:</strong> x:&#39;?7579 -&gt; Decoder&lt;&#39;?7580,&#39;?7579&gt;<br />
+                          <strong>Type parameters:</strong> '?7579, '?7580          </div>
         </td>
         <td class="xmldoc">
             <a href="https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/tree/master/src/EdIlyin.FSharp.Elm.Core/Decode.fs#L33-33" class="github-link">
