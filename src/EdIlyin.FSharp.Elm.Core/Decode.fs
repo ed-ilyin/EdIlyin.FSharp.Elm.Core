@@ -157,3 +157,21 @@ module Decode =
          runOnInput parser input
             |> Result.mapError (uncurry (sprintf "Expecting %A. %A."))
             |> Result.map fst
+
+
+    let tuple p1 p2 =
+        let label = sprintf "%s and %s" (getLabel p1) (getLabel p2)
+        p1 >>= (fun p1Result ->
+        p2 >>= (fun p2Result ->
+            succeed (p1Result,p2Result) ))
+        <?> label
+
+
+    let (.>>.) = tuple
+
+
+    let (>>.) p1 p2 =
+        // create a pair
+        p1 .>>. p2
+        // then only keep the second value
+        |> map snd

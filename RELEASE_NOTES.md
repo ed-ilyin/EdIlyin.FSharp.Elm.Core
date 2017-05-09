@@ -1,4 +1,7 @@
-### 1.0.16 - May 09 2017
+### 1.0.17 - May 09 2017
+* adds Decode.tuple, Decode.(.>>.), Decode.(>>.)
+
+#### 1.0.16 - May 09 2017
 * Down to framework 4.6.1
 
 #### 1.0.15 - May 09 2017
