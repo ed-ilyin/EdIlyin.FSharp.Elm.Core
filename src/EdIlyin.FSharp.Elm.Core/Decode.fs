@@ -119,3 +119,29 @@ module Decode =
 
     let fromResult result =
         Result.unpack failed succeed result
+
+
+    /// Match an input token if the predicate is satisfied
+    let satisfy nextFn predicate label =
+        let innerFn input =
+            let lab =
+                Option.Extra.unwrap
+
+            let remainingInput, opt = nextFn input
+
+            match opt with
+                | None ->
+                    let err = "No more input"
+                    Err (label,err)
+
+                | Some first ->
+                    match predicate first with
+                        | Ok value -> value => remainingInput |> Ok
+
+                        | Err unexpected ->
+                            label =>
+                                sprintf "Unexpected '%A'." unexpected
+                                    |> Err
+
+        // return the parser
+        {decoder=innerFn;label=label}

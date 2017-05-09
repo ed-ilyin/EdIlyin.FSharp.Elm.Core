@@ -1,4 +1,7 @@
-### 1.0.13 - May 09 2017
+### 1.0.14 - May 09 2017
+* Adds Decode.satisfy
+
+#### 1.0.13 - May 09 2017
 * Back to 4.3.1.0 Core again
 
 #### 1.0.12 - May 09 2017
