@@ -1,4 +1,7 @@
-### 1.0.18 - May 10 2017
+### 1.0.19 - May 10 2017
+* Removes FSharp.Core dependency
+
+#### 1.0.18 - May 10 2017
 * adds Decode.map5
 
 #### 1.0.17 - May 09 2017
