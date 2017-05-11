@@ -1,4 +1,4 @@
-namespace EdIlyin.FSharp.Elm.Json
+namespace EdIlyin.FSharp.Elm.Core.Json
 
 open Chiron
 open EdIlyin.FSharp.Elm.Core

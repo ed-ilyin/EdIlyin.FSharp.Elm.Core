@@ -1,4 +1,7 @@
-### 1.0.21 - May 11 2017
+### 1.0.22 - May 11 2017
+* Moves Json.Decode to Core
+
+#### 1.0.21 - May 11 2017
 * Adds Json.Decode.string
 
 #### 1.0.20 - May 10 2017

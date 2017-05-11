@@ -43,11 +43,11 @@
     <Compile Include="Result.fs" />
     <Compile Include="Decode.fs" />
     <Compile Include="Debug.fs" />
+    <Compile Include="Json.Encode.fs" />
+    <Compile Include="Json.Decode.fs" />
     <None Include="paket.references" />
     <None Include="paket.template" />
     <Content Include="App.config" />
-    <Compile Include="Json.Encode.fs" />
-    <Compile Include="Json.Decode.fs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <Choose>
