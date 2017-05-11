@@ -37,7 +37,7 @@ module Decode =
 
 
     let failed x = {
-        decoder = (fun _ -> Err x)
+        decoder = (fun _ -> "nothing" => x |> Err)
         label = sprintf "%A" x
     }
 
