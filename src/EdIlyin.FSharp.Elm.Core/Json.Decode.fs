@@ -13,7 +13,7 @@ module Decode =
 
             match json with
                 | String s ->
-                    try string s => json |> Ok
+                    try string s |> Ok
                     with | _ -> label => err |> Err
 
                 | _ -> label => err |> Err

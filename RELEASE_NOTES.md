@@ -1,4 +1,7 @@
-### 1.0.22 - May 11 2017
+### 1.0.23 - May 11 2017
+* Fixes string JSON decoder
+
+#### 1.0.22 - May 11 2017
 * Moves Json.Decode to Core
 
 #### 1.0.21 - May 11 2017
