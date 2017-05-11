@@ -1,4 +1,7 @@
-### 1.0.20 - May 10 2017
+### 1.0.21 - May 11 2017
+* Adds Json.Decode.string
+
+#### 1.0.20 - May 10 2017
 * Returns back the FSharp.Core dependency but now latest version
 
 #### 1.0.19 - May 10 2017
