@@ -57,11 +57,11 @@
             ( .&gt;&gt;. ) 
           </code>
           <div class="tip" id="9">
-            <strong>Signature:</strong> Decoder&lt;&#39;?7662,&#39;?7663&gt; -&gt; Decoder&lt;&#39;?7662,&#39;?7664&gt; -&gt; Decoder&lt;&#39;?7662,(&#39;?7663 * &#39;?7664)&gt;<br />
-                          <strong>Type parameters:</strong> '?7662, '?7663, '?7664          </div>
+            <strong>Signature:</strong> Decoder&lt;&#39;?7671,&#39;?7672&gt; -&gt; Decoder&lt;&#39;?7671,&#39;?7673&gt; -&gt; Decoder&lt;&#39;?7671,(&#39;?7672 * &#39;?7673)&gt;<br />
+                          <strong>Type parameters:</strong> '?7671, '?7672, '?7673          </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/tree/master/src/EdIlyin.FSharp.Elm.Core/Decode.fs#L185-185" class="github-link">
+            <a href="https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/tree/master/src/EdIlyin.FSharp.Elm.Core/Decode.fs#L202-202" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -114,11 +114,11 @@
             ( &gt;&gt;. ) p1 p2
           </code>
           <div class="tip" id="12">
-            <strong>Signature:</strong> p1:Decoder&lt;&#39;?7666,&#39;?7667&gt; -&gt; p2:Decoder&lt;&#39;?7666,&#39;?7668&gt; -&gt; Decoder&lt;&#39;?7666,&#39;?7668&gt;<br />
-                          <strong>Type parameters:</strong> '?7666, '?7667, '?7668          </div>
+            <strong>Signature:</strong> p1:Decoder&lt;&#39;?7675,&#39;?7676&gt; -&gt; p2:Decoder&lt;&#39;?7675,&#39;?7677&gt; -&gt; Decoder&lt;&#39;?7675,&#39;?7677&gt;<br />
+                          <strong>Type parameters:</strong> '?7675, '?7676, '?7677          </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/tree/master/src/EdIlyin.FSharp.Elm.Core/Decode.fs#L188-188" class="github-link">
+            <a href="https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/tree/master/src/EdIlyin.FSharp.Elm.Core/Decode.fs#L205-205" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -224,11 +224,11 @@
             fromResult result
           </code>
           <div class="tip" id="18">
-            <strong>Signature:</strong> result:Result&lt;DecoderError,&#39;?7642&gt; -&gt; Decoder&lt;&#39;?7643,&#39;?7642&gt;<br />
-                          <strong>Type parameters:</strong> '?7642, '?7643          </div>
+            <strong>Signature:</strong> result:Result&lt;DecoderError,&#39;?7651&gt; -&gt; Decoder&lt;&#39;?7652,&#39;?7651&gt;<br />
+                          <strong>Type parameters:</strong> '?7651, '?7652          </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/tree/master/src/EdIlyin.FSharp.Elm.Core/Decode.fs#L135-135" class="github-link">
+            <a href="https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/tree/master/src/EdIlyin.FSharp.Elm.Core/Decode.fs#L152-152" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -347,14 +347,14 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '25', 25)" onmouseover="showTip(event, '25', 25)">
-            parseAny parser input
+            map6 (...)
           </code>
           <div class="tip" id="25">
-            <strong>Signature:</strong> parser:Decoder&lt;&#39;?7654,(&#39;?7655 * &#39;?7656)&gt; -&gt; input:&#39;?7654 -&gt; Result&lt;string,&#39;?7655&gt;<br />
-                          <strong>Type parameters:</strong> '?7654, '?7655, '?7656          </div>
+            <strong>Signature:</strong> func:(&#39;?7642 -&gt; &#39;?7643 -&gt; &#39;?7644 -&gt; &#39;?7645 -&gt; &#39;?7646 -&gt; &#39;?7647 -&gt; &#39;?7648) -&gt; decoder1:Decoder&lt;&#39;?7649,&#39;?7642&gt; -&gt; decoder2:Decoder&lt;&#39;?7649,&#39;?7643&gt; -&gt; decoder3:Decoder&lt;&#39;?7649,&#39;?7644&gt; -&gt; decoder4:Decoder&lt;&#39;?7649,&#39;?7645&gt; -&gt; decoder5:Decoder&lt;&#39;?7649,&#39;?7646&gt; -&gt; decoder6:Decoder&lt;&#39;?7649,&#39;?7647&gt; -&gt; Decoder&lt;&#39;?7649,&#39;?7648&gt;<br />
+                          <strong>Type parameters:</strong> '?7642, '?7643, '?7644, '?7645, '?7646, '?7647, '?7648, '?7649          </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/tree/master/src/EdIlyin.FSharp.Elm.Core/Decode.fs#L171-171" class="github-link">
+            <a href="https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/tree/master/src/EdIlyin.FSharp.Elm.Core/Decode.fs#L135-135" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -365,9 +365,27 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '26', 26)" onmouseover="showTip(event, '26', 26)">
-            primitive func
+            parseAny parser input
           </code>
           <div class="tip" id="26">
+            <strong>Signature:</strong> parser:Decoder&lt;&#39;?7663,(&#39;?7664 * &#39;?7665)&gt; -&gt; input:&#39;?7663 -&gt; Result&lt;string,&#39;?7664&gt;<br />
+                          <strong>Type parameters:</strong> '?7663, '?7664, '?7665          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/tree/master/src/EdIlyin.FSharp.Elm.Core/Decode.fs#L188-188" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '27', 27)" onmouseover="showTip(event, '27', 27)">
+            primitive func
+          </code>
+          <div class="tip" id="27">
             <strong>Signature:</strong> func:(&#39;?7587 -&gt; Result&lt;(DecoderLabel * DecoderError),&#39;?7588&gt;) -&gt; Decoder&lt;&#39;?7587,&#39;?7588&gt;<br />
                           <strong>Type parameters:</strong> '?7587, '?7588          </div>
         </td>
@@ -382,10 +400,10 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '27', 27)" onmouseover="showTip(event, '27', 27)">
+          <code onmouseout="hideTip(event, '28', 28)" onmouseover="showTip(event, '28', 28)">
             run decoder value
           </code>
-          <div class="tip" id="27">
+          <div class="tip" id="28">
             <strong>Signature:</strong> decoder:Decoder&lt;&#39;?7572,&#39;?7573&gt; -&gt; value:&#39;?7572 -&gt; Result&lt;(DecoderLabel * DecoderError),&#39;?7573&gt;<br />
                           <strong>Type parameters:</strong> '?7572, '?7573          </div>
         </td>
@@ -400,33 +418,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '28', 28)" onmouseover="showTip(event, '28', 28)">
+          <code onmouseout="hideTip(event, '29', 29)" onmouseover="showTip(event, '29', 29)">
             runOnInput parser input
           </code>
-          <div class="tip" id="28">
-            <strong>Signature:</strong> parser:Decoder&lt;&#39;?7651,&#39;?7652&gt; -&gt; input:&#39;?7651 -&gt; Result&lt;(DecoderLabel * DecoderError),&#39;?7652&gt;<br />
-                          <strong>Type parameters:</strong> '?7651, '?7652          </div>
-        </td>
-        <td class="xmldoc">
-            <a href="https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/tree/master/src/EdIlyin.FSharp.Elm.Core/Decode.fs#L166-166" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '29', 29)" onmouseover="showTip(event, '29', 29)">
-            satisfy nextFn predicate label
-          </code>
           <div class="tip" id="29">
-            <strong>Signature:</strong> nextFn:(&#39;?7645 -&gt; &#39;?7646 * &#39;?7647 option) -&gt; predicate:(&#39;?7647 -&gt; Result&lt;&#39;?7648,&#39;?7649&gt;) -&gt; label:DecoderLabel -&gt; Decoder&lt;&#39;?7645,(&#39;?7649 * &#39;?7646)&gt;<br />
-                          <strong>Type parameters:</strong> '?7645, '?7646, '?7647, '?7648, '?7649          </div>
+            <strong>Signature:</strong> parser:Decoder&lt;&#39;?7660,&#39;?7661&gt; -&gt; input:&#39;?7660 -&gt; Result&lt;(DecoderLabel * DecoderError),&#39;?7661&gt;<br />
+                          <strong>Type parameters:</strong> '?7660, '?7661          </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/tree/master/src/EdIlyin.FSharp.Elm.Core/Decode.fs#L140-140" class="github-link">
+            <a href="https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/tree/master/src/EdIlyin.FSharp.Elm.Core/Decode.fs#L183-183" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -437,9 +437,27 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '30', 30)" onmouseover="showTip(event, '30', 30)">
-            setLabel label decoder
+            satisfy nextFn predicate label
           </code>
           <div class="tip" id="30">
+            <strong>Signature:</strong> nextFn:(&#39;?7654 -&gt; &#39;?7655 * &#39;?7656 option) -&gt; predicate:(&#39;?7656 -&gt; Result&lt;&#39;?7657,&#39;?7658&gt;) -&gt; label:DecoderLabel -&gt; Decoder&lt;&#39;?7654,(&#39;?7658 * &#39;?7655)&gt;<br />
+                          <strong>Type parameters:</strong> '?7654, '?7655, '?7656, '?7657, '?7658          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/tree/master/src/EdIlyin.FSharp.Elm.Core/Decode.fs#L157-157" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '31', 31)" onmouseover="showTip(event, '31', 31)">
+            setLabel label decoder
+          </code>
+          <div class="tip" id="31">
             <strong>Signature:</strong> label:DecoderLabel -&gt; decoder:Decoder&lt;&#39;?7590,&#39;?7591&gt; -&gt; Decoder&lt;&#39;?7590,&#39;?7591&gt;<br />
                           <strong>Type parameters:</strong> '?7590, '?7591          </div>
         </td>
@@ -454,10 +472,10 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '31', 31)" onmouseover="showTip(event, '31', 31)">
+          <code onmouseout="hideTip(event, '32', 32)" onmouseover="showTip(event, '32', 32)">
             succeed x
           </code>
-          <div class="tip" id="31">
+          <div class="tip" id="32">
             <strong>Signature:</strong> x:&#39;?7581 -&gt; Decoder&lt;&#39;?7582,&#39;?7581&gt;<br />
                           <strong>Type parameters:</strong> '?7581, '?7582          </div>
         </td>
@@ -472,15 +490,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '32', 32)" onmouseover="showTip(event, '32', 32)">
+          <code onmouseout="hideTip(event, '33', 33)" onmouseover="showTip(event, '33', 33)">
             tuple p1 p2
           </code>
-          <div class="tip" id="32">
-            <strong>Signature:</strong> p1:Decoder&lt;&#39;?7658,&#39;?7659&gt; -&gt; p2:Decoder&lt;&#39;?7658,&#39;?7660&gt; -&gt; Decoder&lt;&#39;?7658,(&#39;?7659 * &#39;?7660)&gt;<br />
-                          <strong>Type parameters:</strong> '?7658, '?7659, '?7660          </div>
+          <div class="tip" id="33">
+            <strong>Signature:</strong> p1:Decoder&lt;&#39;?7667,&#39;?7668&gt; -&gt; p2:Decoder&lt;&#39;?7667,&#39;?7669&gt; -&gt; Decoder&lt;&#39;?7667,(&#39;?7668 * &#39;?7669)&gt;<br />
+                          <strong>Type parameters:</strong> '?7667, '?7668, '?7669          </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/tree/master/src/EdIlyin.FSharp.Elm.Core/Decode.fs#L177-177" class="github-link">
+            <a href="https://github.com/ed-ilyin/EdIlyin.FSharp.Elm.Core/tree/master/src/EdIlyin.FSharp.Elm.Core/Decode.fs#L194-194" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
