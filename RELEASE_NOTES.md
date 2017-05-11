@@ -1,4 +1,7 @@
-### 1.0.24 - May 11 2017
+### 1.0.25 - May 11 2017
+* Add Decode.map6
+
+#### 1.0.24 - May 11 2017
 * Fixes Decode.failed
 
 #### 1.0.23 - May 11 2017
