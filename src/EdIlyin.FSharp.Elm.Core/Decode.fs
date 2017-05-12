@@ -149,7 +149,7 @@ module Decode =
                 (getLabel decoder6)
 
 
-    let map7 func decoder1 decoder2 decoder3 decoder4 decoder5 decoder6 decoder7=
+    let map7 func decoder1 decoder2 decoder3 decoder4 decoder5 decoder6 decoder7 =
         succeed func
             <*> decoder1
             <*> decoder2
@@ -166,6 +166,27 @@ module Decode =
                 (getLabel decoder5)
                 (getLabel decoder6)
                 (getLabel decoder7)
+
+
+    let map8 func decoder1 decoder2 decoder3 decoder4 decoder5 decoder6 decoder7 decoder8 =
+        succeed func
+            <*> decoder1
+            <*> decoder2
+            <*> decoder3
+            <*> decoder4
+            <*> decoder5
+            <*> decoder6
+            <*> decoder7
+            <*> decoder8
+            <?> sprintf "{ %s, %s, %s, %s, %s, %s, %s, %s }"
+                (getLabel decoder1)
+                (getLabel decoder2)
+                (getLabel decoder3)
+                (getLabel decoder4)
+                (getLabel decoder5)
+                (getLabel decoder6)
+                (getLabel decoder7)
+                (getLabel decoder8)
 
 
     let fromResult result =
