@@ -1,5 +1,8 @@
-### 1.0.25 - May 11 2017
-* Add Decode.map6
+### 1.0.26 - May 12 2017
+* Adds Decode.map7
+
+#### 1.0.25 - May 11 2017
+* Adds Decode.map6
 
 #### 1.0.24 - May 11 2017
 * Fixes Decode.failed
@@ -20,10 +23,10 @@
 * Removes FSharp.Core dependency
 
 #### 1.0.18 - May 10 2017
-* adds Decode.map5
+* Adds Decode.map5
 
 #### 1.0.17 - May 09 2017
-* adds Decode.tuple, Decode.(.>>.), Decode.(>>.)
+* Adds Decode.tuple, Decode.(.>>.), Decode.(>>.)
 
 #### 1.0.16 - May 09 2017
 * Down to framework 4.6.1
@@ -41,7 +44,7 @@
 * Adds Json.Encode
 
 #### 1.0.11 - May 08 2017
-* switch back to latest FSharp.Core
+* Switch back to latest FSharp.Core
 
 #### 1.0.10 - May 08 2017
 * move to FSharp.Core 4.3.1.0
