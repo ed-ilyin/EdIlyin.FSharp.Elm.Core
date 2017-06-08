@@ -189,6 +189,29 @@ module Decode =
                 (getLabel decoder8)
 
 
+    let map9 func decoder1 decoder2 decoder3 decoder4 decoder5 decoder6 decoder7 decoder8 decoder9 =
+        succeed func
+            <*> decoder1
+            <*> decoder2
+            <*> decoder3
+            <*> decoder4
+            <*> decoder5
+            <*> decoder6
+            <*> decoder7
+            <*> decoder8
+            <*> decoder9
+            <?> sprintf "{ %s, %s, %s, %s, %s, %s, %s, %s, %s }"
+                (getLabel decoder1)
+                (getLabel decoder2)
+                (getLabel decoder3)
+                (getLabel decoder4)
+                (getLabel decoder5)
+                (getLabel decoder6)
+                (getLabel decoder7)
+                (getLabel decoder8)
+                (getLabel decoder9)
+
+
     let fromResult result =
         Result.unpack failed succeed result
 
