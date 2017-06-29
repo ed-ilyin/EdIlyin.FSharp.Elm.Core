@@ -1,4 +1,7 @@
-### 1.0.28 - June 8 2017
+### 1.0.29 - June 29 2017
+* Adds Json.Decode.value
+
+#### 1.0.28 - June 8 2017
 * Adds Decode.map9
 
 #### 1.0.27 - May 12 2017

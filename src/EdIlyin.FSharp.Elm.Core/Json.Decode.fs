@@ -6,16 +6,16 @@ open EdIlyin.FSharp.Elm.Core
 
 module Decode =
     let string =
-        let label = "string"
+        let label = "a String"
+        Decode.primitive label
+            (fun value ->
+                let unexpected = sprintf "%A" json
+                
+                match value with
+                    | String s -> Ok s
+                    | _ -> label => unexpected |> Err
+            )
 
-        let decFn json =
-            let err = sprintf "Unexpected '%A'" json
 
-            match json with
-                | String s ->
-                    try string s |> Ok
-                    with | _ -> label => err |> Err
-
-                | _ -> label => err |> Err
-
-        {label = label; decoder = decFn}
+    let value : Decoder<Json, Json> =
+        Decode.primitive "an JSON Value" Ok

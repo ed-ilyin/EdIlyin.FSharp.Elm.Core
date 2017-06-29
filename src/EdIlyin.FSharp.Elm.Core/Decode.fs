@@ -42,9 +42,7 @@ module Decode =
     }
 
 
-    let primitive func =
-        let label = "primitive"
-
+    let primitive label func =
         let decoderFn input =
             match func input with
                 | Err error -> Err error
@@ -60,7 +58,8 @@ module Decode =
 
 
     let andThen func decoder =
-        primitive
+        let label = getLabel decoder |> sprintf "and then %s"
+        primitive label
             (fun input ->
                 match run decoder input with
                     | Err (label, error) -> Err (label, error)
