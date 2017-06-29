@@ -1,3 +1,7 @@
+### 1.0.30 - June 29 2017
+* Do not allow null in Json.Decode.string
+* Updates packages
+
 ### 1.0.29 - June 29 2017
 * Adds Json.Decode.value
 

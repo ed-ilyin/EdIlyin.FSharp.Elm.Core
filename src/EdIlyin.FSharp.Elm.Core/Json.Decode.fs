@@ -10,9 +10,13 @@ module Decode =
         Decode.primitive label
             (fun value ->
                 let unexpected = sprintf "%A" json
-                
+
                 match value with
-                    | String s -> Ok s
+                    | String str ->
+                        match str with
+                            | null -> label => unexpected |> Err
+                            | s -> Ok s
+                            
                     | _ -> label => unexpected |> Err
             )
 
