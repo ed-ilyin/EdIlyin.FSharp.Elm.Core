@@ -1,8 +1,11 @@
-### 2.0.0 - July 6 2017
+### 2.0.1 - July 6 2017
+* Just more pretty code
+
+#### 2.0.0 - July 6 2017
 * Changes Decode Result
 * Switches to FSharp.Core.Result
 
-#### 1.0.30 - June 29 2017
+### 1.0.30 - June 29 2017
 * Do not allow null in Json.Decode.string
 * Updates packages
 

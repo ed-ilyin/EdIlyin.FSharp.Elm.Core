@@ -290,4 +290,4 @@ let resultFromResult =
 
 let result decoder =
     let label = getLabel decoder
-    primitive label (decode decoder >> Decoded)
+    decode decoder >> Decoded |> primitive label
