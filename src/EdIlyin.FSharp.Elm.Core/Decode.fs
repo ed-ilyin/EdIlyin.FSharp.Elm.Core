@@ -223,29 +223,27 @@ let fromResult result =
 
 
 // /// Match an input token if the predicate is satisfied
-// let satisfy nextFn predicate label =
-//     let innerFn input =
-//         let lab =
-//             Option.Extra.unwrap
+let satisfy nextFn predicate label =
+    let innerFn input =
+        let remainingInput, opt = nextFn input
 
-//         let remainingInput, opt = nextFn input
+        match opt with
+            | None ->
+                let err = "No more input"
+                Message err
 
-//         match opt with
-//             | None ->
-//                 let err = "No more input"
-//                 Error (label,err)
+            | Some first ->
+                match predicate first with
+                    | Ok value ->
+                        value => remainingInput |> ExpectingButGot
 
-//             | Some first ->
-//                 match predicate first with
-//                     | Ok value -> value => remainingInput |> Ok
+                    | Error unexpected ->
+                        label
+                            => unexpected
+                            |> ExpectingButGot
 
-//                     | Error unexpected ->
-//                         label =>
-//                             sprintf "Unexpected '%A'." unexpected
-//                                 |> Err
-
-//     // return the parser
-//     {decoder=innerFn;label=label}
+    // return the parser
+    {decoder=innerFn;label=label}
 
 
 /// Run the parser on a InputState
@@ -255,8 +253,7 @@ let fromResult result =
 
 
 // let parseAny parser input =
-//      runOnInput parser input
-//         |> Result.mapError (uncurry (sprintf "Expecting %A. %A."))
+//      run parser input
 //         |> Result.map fst
 
 

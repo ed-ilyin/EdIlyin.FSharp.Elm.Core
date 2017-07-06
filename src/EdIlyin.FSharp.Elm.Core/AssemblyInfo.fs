@@ -5,8 +5,8 @@ open System.Reflection
 [<assembly: AssemblyTitleAttribute("EdIlyin.FSharp.Elm.Core")>]
 [<assembly: AssemblyProductAttribute("EdIlyin.FSharp.Elm.Core")>]
 [<assembly: AssemblyDescriptionAttribute("Brings to the F# Elm language core package modules like Json.Encode, Json.Decode, Basics, Debug, Result, Tuple, etc")>]
-[<assembly: AssemblyVersionAttribute("2.0.1")>]
-[<assembly: AssemblyFileVersionAttribute("2.0.1")>]
+[<assembly: AssemblyVersionAttribute("2.1.0")>]
+[<assembly: AssemblyFileVersionAttribute("2.1.0")>]
 [<assembly: AssemblyConfigurationAttribute("Release")>]
 do ()
 
@@ -14,6 +14,6 @@ module internal AssemblyVersionInformation =
     let [<Literal>] AssemblyTitle = "EdIlyin.FSharp.Elm.Core"
     let [<Literal>] AssemblyProduct = "EdIlyin.FSharp.Elm.Core"
     let [<Literal>] AssemblyDescription = "Brings to the F# Elm language core package modules like Json.Encode, Json.Decode, Basics, Debug, Result, Tuple, etc"
-    let [<Literal>] AssemblyVersion = "2.0.1"
-    let [<Literal>] AssemblyFileVersion = "2.0.1"
+    let [<Literal>] AssemblyVersion = "2.1.0"
+    let [<Literal>] AssemblyFileVersion = "2.1.0"
     let [<Literal>] AssemblyConfiguration = "Release"

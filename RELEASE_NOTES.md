@@ -1,4 +1,7 @@
-### 2.0.1 - July 6 2017
+### 2.1.0 - July 6 2017
+* returns Decode.satisfy
+
+#### 2.0.1 - July 6 2017
 * Just more pretty code
 
 #### 2.0.0 - July 6 2017
