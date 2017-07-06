@@ -9,17 +9,15 @@ module Decode =
         let label = "a String"
         Decode.primitive label
             (fun value ->
-                let unexpected = sprintf "%A" json
-
                 match value with
                     | String str ->
                         match str with
-                            | null -> label => unexpected |> Err
-                            | s -> Ok s
-                            
-                    | _ -> label => unexpected |> Err
+                            | null -> label => value |> Decode.ExpectingButGot
+                            | s -> Decode.Decoded s
+
+                    | _ -> label => value |> Decode.ExpectingButGot
             )
 
 
-    let value : Decoder<Json, Json> =
-        Decode.primitive "an JSON Value" Ok
+    let value : Decode.Decoder<Json, Json> =
+        Decode.primitive "an JSON Value" Decode.Decoded
