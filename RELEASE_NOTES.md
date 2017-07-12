@@ -1,4 +1,7 @@
-### 2.1.0 - July 6 2017
+### 2.1.1 - July 12 2017
+* back to net4.5 and target 4.1.0.0
+
+#### 2.1.0 - July 6 2017
 * returns Decode.satisfy
 
 #### 2.0.1 - July 6 2017
