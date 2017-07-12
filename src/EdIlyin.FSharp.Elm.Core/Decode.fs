@@ -50,7 +50,7 @@ let fail error =
 
 
 let succeed value =
-    primitive <| sprintf "%A" value <| fun _ -> Decoded value
+    primitive "anything" <| fun _ -> Decoded value
 
 
 let setLabel label decoder = { decoder with label = label }

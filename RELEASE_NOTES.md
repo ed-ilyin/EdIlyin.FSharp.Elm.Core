@@ -1,4 +1,7 @@
-### 2.1.1 - July 12 2017
+### 2.1.2 - July 12 2017
+* removes formatting from Decode.succeed
+
+#### 2.1.1 - July 12 2017
 * back to net4.5 and target 4.1.0.0
 
 #### 2.1.0 - July 6 2017
